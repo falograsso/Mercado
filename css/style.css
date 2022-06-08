@@ -14,6 +14,16 @@ html, body {
 
 /* Header */
 
+.head {
+    background: #FFF;
+    width: 100%;
+    min-height: 125px;
+    margin: 0;
+    position: absolute;
+    z-index: 998;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 header {
     background: #FFF;
     width: 100%;
@@ -42,7 +52,7 @@ header {
 
 .logo__div{
     left: 0;
-    top: 15px;
+    top: 20px;
     width: 135px;
     position: absolute;
 }
@@ -190,6 +200,10 @@ a{
     transition: all 0.2s ease-in-out;
 }
 
+header button{
+    border: 0;
+    background-color: white;
+}
 /* titulos */
 
 h1{
@@ -391,11 +405,13 @@ div{
 
 .imagen__imagen{
     width: 100%;
-    height:100%;
+    height:calc(100vh - 100px);
+    object-fit: cover;
+    object-position: center;
 }
 
 .contenedor{
-    margin-top: -150px;
+    padding: 0;;
 }
 
 /* .contenedor__menu{ ex class contenedor__menu
@@ -610,6 +626,28 @@ aside a{
 aside a:hover {
     color: #ed174f;
     text-decoration: underline;
+}
+
+.dropdown-menu a:hover{
+    color: #ed174f;
+    background-color: transparent;
+}
+
+.dropdown-menu{
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1.6em 2em;
+    margin-top: -1em;
+    margin-bottom: -1em;
+}
+
+.dropdown-menu a{
+    color: #3c3c3c;
+    padding: 0.5em 0;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: "roboto";
+    transition: all 0.2s ease-in-out;
 }
 
 .noticias__articulo{
