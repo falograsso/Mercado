@@ -6,6 +6,7 @@
 
     <meta name="description" content="El mercado de La Plata más famoso a nivel regional. Está situado en la periferia de la ciudad de las diagonales. ¡Descúbrelo!">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
@@ -26,7 +27,7 @@
 
         <div class="logo" >
 
-            <div class="contenido__header">
+            <div class="container">
 
                 <div class="logo__div">
 
@@ -42,11 +43,98 @@
 
         <!-- Logo -->
 
+        <!-- Menu hamburguesa -->
+        
+        <nav class="navbar fixed-top">
+
+            <div class="container">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  
+                <div class="offcanvas-header">
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body nav__menu__hamburguesa">
+
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      
+
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../Inicio.html">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mercado
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="../Paginas/Mercado.html">BIENVENIDA</a></li>
+                        <li><a class="dropdown-item" href="../Paginas/Mercado.html">SERVICIOS DEL MERCADO</a></li>
+                        <li><a class="dropdown-item" href="../Paginas/Mercado.html">ACTIVIDADES</a></li>
+                        <li><a class="dropdown-item" href="../Paginas/Mercado.html">HISTORIA</a></li>
+                        <li><a class="dropdown-item" href="../Paginas/Mercado.html">ASOCIACIÓN DE COMERCIANTES</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Paginas/Puestos.html">Puestos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Paginas/Actualidad.html">Actualidad</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Paginas/Contacto.html">Contacto</a>
+                    </li>
+                    
+                  </ul>
+
+                    <form action="resultados-busqueda" method="get" id="search-form" class="formInput">
+                        <input type="search" id="keywords" value placeholder="Buscar">
+                        <input type="submit" class="icon-search" >
+                    </form>
+
+                    <div class="social__hamburguesa">
+
+                        <ol class="social__lista__hamburguesa">
+    
+                            <li class="social__item">
+                                <a href="https://www.facebook.com/barrio.meridianov" title="Facebook del Mercado" target="_blank" class="social__boton"><img class="social__img__hamburguesa" src="https://img.icons8.com/material-outlined/24/000000/facebook-f.png"/></a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://twitter.com/BarrioMeridiano" title="Twitter del Mercado" target="_blank" class="social__boton"><img class="social__img__hamburguesa" src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/></a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/accounts/login/?next=/barrio_meridianov/" title="Instagram del Mercado" target="_blank" class="social__boton"><img class="social__img__hamburguesa" src="https://img.icons8.com/fluency-systems-regular/48/000000/instagram-new--v1.png"/></a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.youtube.com/" title="Youtube del Mercado" target="_blank" class="social__boton"><img class="social__img__hamburguesa" src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png"/></a>
+                            </li>
+    
+                        </ol>
+
+                    </div>               
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Menu hamburguesa -->
+
         <!-- Buscador -->
 
         <div class="buscador">
 
-            <div class="contenido__header">
+            <div class="container">
 
                 <form action="resultados-busqueda" method="get" id="search-form">
                     <input type="search" id="keywords" value placeholder="Buscar">
@@ -59,7 +147,7 @@
 
         <!-- Buscador -->
 
-        <div class="contenido__header">
+        <div class="container">
             
             <!-- Menu -->
 
@@ -70,28 +158,24 @@
                     <ul class="menu__lista">
         
                         <li class="menu__item"><a class="menu__boton" href="../Inicio.html">Inicio</a></li>
-                        <li class="menu__item"><a class="menu__boton" href="../Paginas/Mercado.html">Mercado</a></li>
-        
-                        <!-- <ul class="menu__sublista">
-        
-                            <li class="menu__subitem">
-                                <a href="BIENVENIDA">BIENVENIDA</a>
-                                </li>
-                            <li class="menu__subitem">
-                                <a href="SERVICIOS DEL MERCADO">SERVICIOS DEL MERCADO</a>
-                                </li>
-                            <li class="menu__subitem">
-                                <a href="ACTIVIDADES">ACTIVIDADES</a>
-                                </li>
-                            <li class="menu__subitem">
-                                <a href="HISTORIA">HISTORIA</a>
-                                </li>
-                            <li class="menu__subitem">
-                                <a href="ASOCIACIÓN DE COMERCIANTES">ASOCIACIÓN DE COMERCIANTES</a>
-                            </li>
-        
-                        </ul> -->
-                        
+                        <li class="menu__item">
+
+                            <button class="" data-bs-toggle="dropdown" >
+                                <a class="menu__boton" href="./Paginas/Mercado.html">Mercado</a>
+                            </button>
+    
+                            <ul class="dropdown-menu ">
+    
+                                <li><a class="dropdown-item" href="../Paginas/Mercado.html">BIENVENIDA</a></li>
+                                <li><a class="dropdown-item" href="../Paginas/Mercado.html">SERVICIOS DEL MERCADO</a></li>
+                                <li><a class="dropdown-item" href="../Paginas/Mercado.html">ACTIVIDADES</a></li>
+                                <li><a class="dropdown-item" href="../Paginas/Mercado.html">HISTORIA</a></li>
+                                <li><a class="dropdown-item" href="../Paginas/Mercado.html">ASOCIACIÓN DE COMERCIANTES</a></li>
+                                
+                            </ul>
+
+                        </li>
+                     
                         <li class="menu__item"><a class="menu__boton" href="../Paginas/Puestos.html">Puestos</a></li>
                         <li class="menu__item"><a class="menu__boton" href="../Paginas/Actualidad.html">Actualidad</a></li>
                         <li class="menu__item"><a class="menu__boton" href="../Paginas/Contacto.html">Contacto</a></li>
@@ -110,16 +194,16 @@
 
                 <ol class="social__lista">
                     <li class="social__item">
-                        <a href="https://www.facebook.com/barrio.meridianov" title="Facebook del Mercado" target="_blank" class="social__boton"><img class="img__fb" src="https://img.icons8.com/material-outlined/24/000000/facebook-f.png"/></a>
+                        <a href="https://www.facebook.com/barrio.meridianov" title="Facebook del Mercado" target="_blank" class="social__boton"><img class="social__img" src="https://img.icons8.com/material-outlined/24/000000/facebook-f.png"/></a>
                     </li>
                     <li class="social__item">
-                        <a href="https://twitter.com/BarrioMeridiano" title="Twitter del Mercado" target="_blank" class="social__boton"><img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/></a>
+                        <a href="https://twitter.com/BarrioMeridiano" title="Twitter del Mercado" target="_blank" class="social__boton"><img class="social__img" src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/></a>
                     </li>
                     <li class="social__item">
-                        <a href="https://www.instagram.com/accounts/login/?next=/barrio_meridianov/" title="Instagram del Mercado" target="_blank" class="social__boton"><img src="https://img.icons8.com/fluency-systems-regular/48/000000/instagram-new--v1.png"/></a>
+                        <a href="https://www.instagram.com/accounts/login/?next=/barrio_meridianov/" title="Instagram del Mercado" target="_blank" class="social__boton"><img class="social__img" src="https://img.icons8.com/fluency-systems-regular/48/000000/instagram-new--v1.png"/></a>
                     </li>
                     <li class="social__item">
-                        <a href="https://www.youtube.com/" title="Youtube del Mercado" target="_blank" class="social__boton"><img src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png"/></a>
+                        <a href="https://www.youtube.com/" title="Youtube del Mercado" target="_blank" class="social__boton"><img class="social__img" src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png"/></a>
                     </li>
                 </ol>
 
@@ -129,8 +213,6 @@
 
         </div>
         
-        <hr>
-
     </header>
 
     <main>
@@ -139,7 +221,8 @@
 
         <section>
 
-            <article class="historia" >
+            <article class="container text-box">
+                <!-- antigua class"historia" -->
 
                 <h2 class="texto__centro">Mercado</h2>
 
@@ -185,8 +268,6 @@
         <!-- historia-->
 
     </main>
-
-    <hr>
 
     <footer>
 
@@ -286,6 +367,6 @@
  \/_/\/_/\/_/ \/____/  \/_/  \/____/ \/__/\/_/ \/__,_ / \/___/ 
                                                           
      -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
