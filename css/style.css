@@ -42,7 +42,7 @@ header {
 }
 
 .container{
-    z-index: 9999;
+    z-index: 9;
     position: relative;
     padding-right: 25px;
     padding-left: 25px;
@@ -93,7 +93,31 @@ header {
     background-size: 24px 24px ;
 }
 
+.formInput input[type="search"]{
+    font-size: .9em;
+    font-family: "roboto";
+    color: #000;
+    border: 0;
+    padding: 7px 10px;
+    width: 100%;
+    height: 35px;
+    background: #eeeded url(https://img.icons8.com/fluency-systems-regular/48/000000/search--v1.png) no-repeat;
+    background-position: 97% 50%;
+    background-size: 24px 24px ;
+}
+
 .buscador input[type="submit"]{
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    color: transparent;
+}
+
+.formInput input[type="submit"]{
     width: 35px;
     height: 35px;
     background: transparent;
@@ -158,6 +182,77 @@ a:hover {
     text-decoration: dotted;
 }
 
+
+/* hamburguesa */
+
+.social__hamburguesa{
+    width: auto;
+    transition: all .3s ease-in-out;
+}
+
+.social__lista__hamburguesa{
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social__lista__hamburguesa .social__item{
+    margin: 10px;
+    padding: 10px;
+}
+
+.social__img__hamburguesa{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    filter: invert(76%) sepia(11%) saturate(8%) hue-rotate(343deg) brightness(103%) contrast(82%);
+}
+
+.offcanvas-body {
+    padding: 2em 2em 2em 4.8em;
+}
+
+.navbar-toggler {
+    border: none;
+    color: white;
+}
+
+.navbar-toggler-icon{
+    height: 35px;
+    width: 35px;
+    top:200%;
+    left: -100px;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+}
+
+.btn-close{
+    width: 35px;
+    height: 35px;
+}
+
+.nav-item a{
+    font-size: 1.3em;
+    font-family: "roboto";
+    color: #3c3c3c;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0.8em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0;
+}
+
+.offcanvas {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
 /* Social */
 
 .social{
@@ -183,14 +278,14 @@ a:hover {
     height: 34px;
 }
 
-.social img{
+.social__img{
     width: 24px;
     height: 24px;
     background-color: transparent;
     filter: invert(76%) sepia(11%) saturate(8%) hue-rotate(343deg) brightness(103%) contrast(82%);
 }
 
-.social img:hover {
+.social__img:hover {
     filter: invert(28%) sepia(98%) saturate(4541%) hue-rotate(333deg) brightness(93%) contrast(100%);
 }
 
@@ -648,6 +743,7 @@ aside a:hover {
     text-decoration: none;
     font-family: "roboto";
     transition: all 0.2s ease-in-out;
+    z-index: 9999;
 }
 
 .noticias__articulo{
@@ -659,7 +755,6 @@ aside a:hover {
     display: flex;
     flex-direction: row;
     height: 370px;
-    
 } 
 
 .noticias__texto{
@@ -878,6 +973,9 @@ footer .social__boton{
     .container{
         width: 942px;
     }
+    .navbar {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1340px){
@@ -920,6 +1018,9 @@ footer .social__boton{
     } */
     .container {
         width: 1290px;
+    }
+    .navbar {
+        display: none;
     }
 }
 
@@ -1010,6 +1111,7 @@ footer .social__boton{
         right: 312px;
         top: 12px;
     }
+    
 }
 
 
