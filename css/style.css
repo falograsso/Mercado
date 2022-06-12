@@ -505,6 +505,11 @@ div{
     object-position: center;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 5rem;
+    height: 5rem;
+}
+
 .contenedor{
     padding: 0;;
 }
@@ -882,28 +887,33 @@ aside a:hover {
 
 /* footer */
 
-footer{
+footer {
     background-color: #262626;
     padding: 50px 0px 70px;
     color: #FFF;
 }
 
-.bloque__footer {
+/* .bloque__footer { ahora row
     padding: 0px 200px 0px;
-}
+} */
 
 .contactenos{
-    text-align: end;
+    text-align: center;
+    padding-top: 20px;
 }
 
 strong{
-    font-family: "robotoBold";
+    font-family: "roboto";
 }
 
 footer ul li{
     margin: 0;
     font-size: .85em;
     list-style: none;
+}
+
+footer ul, ol {
+    padding-left: 0rem;
 }
 
 footer ul{
@@ -914,7 +924,11 @@ footer ol{
     margin-bottom: 50px;
 }
 
-footer .social__boton{
+footer .social__boton {
+    color: #FFF;
+}
+
+footer a{
     color: #FFF;
 }
 
@@ -937,6 +951,14 @@ footer .social__boton{
 
 .social__footer img:hover {
     filter: invert(28%) sepia(98%) saturate(4541%) hue-rotate(333deg) brightness(93%) contrast(100%);
+}
+
+.img-responsive{
+    max-width: 100%;
+}
+
+.twitter{
+    padding-top: 20px;
 }
 
 /* media */
