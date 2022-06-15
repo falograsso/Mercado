@@ -1,0 +1,189 @@
+// ========================================================================
+// Menu hamburguesa
+// ========================================================================
+
+
+.navbar {
+
+    .container{
+
+        z-index: 9;
+        position: relative;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .navbar-toggler {
+
+            border: none;
+            color: white;
+
+            .navbar-toggler-icon{
+
+                height: 35px;
+                width: 35px;
+                top:200%;
+                left: -100px;
+                cursor: pointer;
+                position: absolute;
+                display: block;
+
+            }
+
+        }
+
+        .offcanvas {
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+
+            .offcanvas-header{
+
+                .btn-close {
+                    width: 35px;
+                    height: 35px;
+                }
+
+            }
+
+            .offcanvas-body {
+
+                padding: 2em 2em 2em 4.8em;
+
+                .navbar-nav{
+
+                    .nav-item{
+
+                        .nav-item a {
+
+                            font-size: 1.3em;
+                            font-family: "roboto";
+                            color: #3c3c3c;
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            padding: 0.8em 0;
+                            border-bottom: 1px solid #eee;
+
+                        }
+
+                        .dropdown-menu {
+
+                            background-color: #FFF;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                            padding: 1.6em 2em;
+                            margin-top: -1em;
+                            margin-bottom: -1em;
+
+                            .dropdown-menu a:hover{
+
+                                color: #ed174f;
+                                background-color: transparent;
+
+                            }
+
+                            .dropdown-menu a{
+
+                                color: #3c3c3c;
+                                padding: 0.5em 0;
+                                font-size: 1em;
+                                text-decoration: none;
+                                font-family: "roboto";
+                                transition: all 0.2s ease-in-out;
+                                z-index: 9999;
+                                
+                            }
+                            
+
+                        }
+
+                    }
+
+                }
+
+                .formInput{
+
+                    .formInput input[type="search"] {
+
+                        font-size: .9em;
+                        font-family: "roboto";
+                        color: #000;
+                        border: 0;
+                        padding: 7px 10px;
+                        width: 100%;
+                        height: 35px;
+                        background: #eeeded url(https://img.icons8.com/fluency-systems-regular/48/000000/search--v1.png) no-repeat;
+                        background-position: 97% 50%;
+                        background-size: 24px 24px;
+
+                    }
+
+                    .formInput input[type="submit"] {
+
+                        width: 35px;
+                        height: 35px;
+                        background: transparent;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border: 0;
+                        color: transparent;
+
+                    }
+
+                }
+
+                .social__hamburguesa {
+
+                    width: auto;
+                    transition: all .3s ease-in-out;
+
+                    .social__lista__hamburguesa {
+
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 2rem;
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        .social__item {
+
+                            margin: 10px;
+                            padding: 10px;
+                            width: 34px;
+                            height: 34px;
+
+                            .social__boton {
+
+                                color: #3c3c3c;
+                                text-decoration: none;
+                                transition: all 0.2s ease-in-out;
+
+                                .social__img__hamburguesa {
+
+                                    width: 35px;
+                                    height: 35px;
+                                    background-color: transparent;
+                                    filter: invert(76%) sepia(11%) saturate(8%) hue-rotate(343deg) brightness(103%) contrast(82%);
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+                
+            }
+
+        }
+
+        .offcanvas-backdrop.show {
+
+            opacity: 0;
+
+        }
+    }
+}

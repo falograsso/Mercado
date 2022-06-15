@@ -1,0 +1,40 @@
+// ========================================================================
+// LOGO
+// ========================================================================
+
+.logo{
+
+    height: 100%;
+    margin: 0 auto;
+
+    .container{
+    
+        z-index: 9;
+        position: relative;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: auto;
+        margin-left: auto;
+    
+        .logo__div{
+    
+            left: 0;
+            top: 20px;
+            width: 135px;
+            position: absolute;
+    
+            .logo__boton{
+    
+                .logo__img{
+    
+                    width: 8rem;
+    
+                }
+            }
+        }
+    }
+}
+
+    
+
+
