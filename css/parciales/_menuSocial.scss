@@ -60,7 +60,7 @@
 
                     a:hover {
 
-                        color: #ed174f;
+                        color: $rojoclaro;
                         text-decoration: dotted;
 
                     }
@@ -77,7 +77,7 @@
         position: absolute;
         transition: all .3s ease-in-out;
 
-        .social__lista{
+        &__lista{
 
             list-style-type: none;
             margin: 0;

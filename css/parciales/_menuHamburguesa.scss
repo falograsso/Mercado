@@ -2,6 +2,8 @@
 // Menu hamburguesa
 // ========================================================================
 
+@import './variables';
+
 
 .navbar {
 
@@ -19,7 +21,7 @@
             border: none;
             color: white;
 
-            .navbar-toggler-icon{
+            &-icon{
 
                 height: 35px;
                 width: 35px;
@@ -35,9 +37,9 @@
 
         .offcanvas {
 
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+            box-shadow: $sombra; 
 
-            .offcanvas-header{
+            &-header{
 
                 .btn-close {
                     width: 35px;
@@ -46,7 +48,7 @@
 
             }
 
-            .offcanvas-body {
+            &-body {
 
                 padding: 2em 2em 2em 4.8em;
 
@@ -54,7 +56,7 @@
 
                     .nav-item{
 
-                        .nav-item a {
+                        & a {
 
                             font-size: 1.3em;
                             font-family: "roboto";
@@ -70,19 +72,19 @@
                         .dropdown-menu {
 
                             background-color: #FFF;
-                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                            box-shadow: $sombra;
                             padding: 1.6em 2em;
                             margin-top: -1em;
                             margin-bottom: -1em;
 
-                            .dropdown-menu a:hover{
+                            & a:hover{
 
-                                color: #ed174f;
+                                color: $rojoclaro;
                                 background-color: transparent;
 
                             }
 
-                            .dropdown-menu a{
+                            & a{
 
                                 color: #3c3c3c;
                                 padding: 0.5em 0;
@@ -103,7 +105,7 @@
 
                 .formInput{
 
-                    .formInput input[type="search"] {
+                    & input[type="search"] {
 
                         font-size: .9em;
                         font-family: "roboto";
@@ -112,13 +114,13 @@
                         padding: 7px 10px;
                         width: 100%;
                         height: 35px;
-                        background: #eeeded url(https://img.icons8.com/fluency-systems-regular/48/000000/search--v1.png) no-repeat;
+                        background: $lupa;
                         background-position: 97% 50%;
                         background-size: 24px 24px;
 
                     }
 
-                    .formInput input[type="submit"] {
+                    & input[type="submit"] {
 
                         width: 35px;
                         height: 35px;
