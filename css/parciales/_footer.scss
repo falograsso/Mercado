@@ -1,0 +1,48 @@
+footer {
+    background-color: #262626;
+    padding: 50px 0px 70px;
+    color: #FFF;
+
+    .container {
+
+        z-index: 9;
+        position: relative;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .row{
+
+            margin-right: -25px;
+            margin-left: -25px;
+
+            .row{
+                    
+                margin-right: -25px;
+                margin-left: -25px;
+
+            }
+
+            .contactenos{
+
+                text-align: center;
+                padding-top: 20px;
+
+                footer a {
+
+                    color: #FFF;
+                    text-decoration: none;
+                }
+
+                p {
+
+                    margin: 0 0 1em 0;
+
+                }
+
+            }
+
+        }
+    }
+}
