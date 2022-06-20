@@ -1,0 +1,84 @@
+// ========================================================================
+// VIDEO MERCADO
+// ========================================================================
+
+.inicio__menu {
+
+    background-image: url(../assets/meridiano.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 90%;
+
+    .container {
+
+        z-index: 9;
+        position: relative;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .row {
+
+            margin-right: -25px;
+            margin-left: -25px;
+
+            .div__bloque {
+
+                background: #FFF;
+                margin-top: -40px;
+                margin-bottom: -200px;
+                padding: 2.5em 2.5em 4em 2.5em;
+                clear: both;
+                color: #3c3c3c;
+                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                width: 66.66666667%;
+                margin-left: 16.66666%;
+
+                .div__video {
+
+                    position: relative;
+                    display: block;
+                    height: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    padding-bottom: 56.25%;
+
+                    .inicio__menu iframe {
+
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                    }
+                }
+
+                blockquote {
+
+                    line-height: 1.2;
+                    color: #ed174f;
+                    border-left: none;
+                    font-size: 3em;
+                    font-family: "roboto";
+                    padding: 10px 20px;
+                    margin: 0.8em 0;
+                    text-align: center;
+                    display: block;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 40px;
+                    margin-inline-end: 40px;
+                }
+                .inicio__menu p {
+
+                    text-align: center;
+                    margin: 0 0 1em 0;
+                }
+            }
+        }
+    }
+
+}

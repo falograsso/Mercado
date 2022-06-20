@@ -1,0 +1,77 @@
+// ========================================================================
+// HISTORIA
+// ========================================================================
+
+section{
+
+    .container .text-box{
+
+        z-index: 9;
+        position: relative;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: -50px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .historia__bloque {
+
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-rows: auto;
+            background: #FFF;
+            padding: 3em;
+            clear: both;
+            color: #3c3c3c;
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+            .historia__texto{
+
+                .titulo__historia {
+
+                    font-size: 24px;
+                    text-align: left;
+                    color: #ed174f;
+                    font-family: "roboto";
+                    margin: 1em 0 0.5em 0;
+                    line-height: 1.2em;
+                }
+
+                p {
+
+                    margin: 0 0 1em 0;
+                }
+            }
+
+            .imagen__vertical {
+
+                grid-row: span 1;
+                .historia__bloque > div > img {
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        article{
+
+            .mapa {
+
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+
+                .mapa iframe {
+                    
+                    width: 100%;
+                    height: 560px;
+                }
+            }
+        }
+    }
+}

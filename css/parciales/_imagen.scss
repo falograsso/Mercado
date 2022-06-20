@@ -1,0 +1,94 @@
+// ========================================================================
+// IMAGEN
+// ========================================================================
+
+.imagen{
+
+    .carouselExampleControls{
+
+        .carousel-inner{
+
+            .carousel-item{
+
+                .imagen__imagen {
+
+                    width: 100%;
+                    height: calc(100vh - 100px);
+                    object-fit: cover;
+                    object-position: center;
+                    
+                }
+            }
+
+        }
+
+        .carousel-control-prev{
+
+            .carousel-control-prev-icon {
+
+                width: 5rem;
+                height: 5rem;
+
+            }
+
+        }
+
+        .carousel-control-next{
+
+            .carousel-control-next-icon {
+
+                width: 5rem;
+                height: 5rem;
+
+            }
+        }
+    }
+
+    .contenedor {
+
+        padding: 0;
+
+        .container {
+
+            z-index: 9;
+            position: relative;
+            padding-right: 25px;
+            padding-left: 25px;
+            margin-right: auto;
+            margin-left: auto;
+
+            .row {
+
+                margin-right: -25px;
+                margin-left: -25px;
+
+                .menu__grid {
+
+                    margin-top: -150px;
+                    width: 100%;
+                    height: 550px;
+                    padding-right: 25px;
+                    padding-left: 25px;
+                    background: transparent;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    
+                    .menu {
+
+                        width: 100%;
+                        height: 100%;
+
+                        .imagen__flex {
+
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// ========================================================================
+// PLANOS
+// ========================================================================
+
+.container {
+
+    z-index: 9;
+    position: relative;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .planos {
+
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-right: auto;
+        margin-left: auto;
+
+        a {
+
+            color: #3c3c3c;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+
+            .planos__img {
+                
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                padding: 40px;
+            }
+        }
+    }
+}

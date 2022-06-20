@@ -1,3 +1,7 @@
+// ========================================================================
+// FOOTER
+// ========================================================================
+
 footer {
     background-color: #262626;
     padding: 50px 0px 70px;
@@ -21,6 +25,102 @@ footer {
                     
                 margin-right: -25px;
                 margin-left: -25px;
+
+                .logo__boton{
+
+                    .img-responsive {
+
+                        max-width: 100%;
+                        
+                    }
+                }
+
+                strong {
+
+                    font-family: "roboto";
+
+                }
+
+                address {
+
+                    margin-bottom: 1rem;
+                    font-style: normal;
+                    line-height: inherit;
+
+                    footer ul {
+
+                        margin-bottom: 50px;
+
+                        footer ul li {
+                            margin: 0;
+                            font-size: .85em;
+                            list-style: none;
+
+                            strong {
+                                font-family: "roboto";
+                            }
+                        }
+                    }
+                }
+
+                .horarios{
+
+                    footer ul {
+
+                        margin-bottom: 50px;
+
+                        footer ul li {
+
+                            margin: 0;
+                            font-size: .85em;
+                            list-style: none;
+
+                            strong {
+
+                                font-family: "roboto";
+
+                            }
+                        }
+                    }
+                }
+
+                .social__footer {
+
+                    padding-top: 10px;
+
+                    footer ol {
+
+                        margin-bottom: 50px;
+
+                    }
+
+                    .social__lista__footer {
+
+                        display: flex;
+                        justify-content: flex-start;
+                        list-style: none;
+
+                        .social__item {
+                            margin: 0;
+                            padding: 0;
+                            width: 34px;
+                            height: 34px;
+
+                            footer .social__boton {
+
+                                color: #FFF;
+
+                                .social__footer img {
+                                    
+                                    width: 24px;
+                                    height: 24px;
+                                    background-color: transparent;
+                                    filter: invert(99%) sepia(0%) saturate(3961%) hue-rotate(54deg) brightness(121%) contrast(100%);
+                                }
+                            }
+                        }
+                    }
+                }
 
             }
 
