@@ -2,11 +2,11 @@
 // HEADER
 // ========================================================================
 
-@import './variables';
+@import './mapaVariables';
 
 header{
 
-    background: #FFF;
+    background: map-get($colores,"fondoblanco");
     width: 100%;
     min-height: 125px;
     margin: 0;

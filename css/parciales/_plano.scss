@@ -2,14 +2,11 @@
 // PLANOS
 // ========================================================================
 
+@import './mapaVariables';
+
 .container {
 
-    z-index: 9;
-    position: relative;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-right: auto;
-    margin-left: auto;
+    @include container;
 
     .planos {
 
@@ -20,7 +17,7 @@
 
         a {
 
-            color: #3c3c3c;
+            color: map-get($colores,"grisoscuro");
             text-decoration: none;
             transition: all 0.2s ease-in-out;
 

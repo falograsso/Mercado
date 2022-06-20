@@ -98,7 +98,7 @@ header {
 }
 .navbar .container .navbar-toggler {
   border: none;
-  color: white;
+  color: #FFF;
 }
 .navbar .container .navbar-toggler-icon {
   height: 35px;
@@ -322,7 +322,7 @@ h3, .titulo__historia {
 
 main {
   padding: 125px 0 0 0;
-  background-color: #f5f5f5;
+  background-color: #f1efef;
 }
 
 .imagen .carouselExampleControls .carousel-inner .carousel-item .imagen__imagen {
@@ -492,7 +492,7 @@ main {
   grid-column: 3;
 }
 .noticias .container .contenido__noticias .div__contenido .div__bloque__noticias .noticias__articulo {
-  background-color: #fff;
+  background-color: #FFF;
   transition: all 0.3s ease;
   margin: 2rem 0;
   cursor: pointer;

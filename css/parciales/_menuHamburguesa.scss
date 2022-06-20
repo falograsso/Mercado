@@ -2,24 +2,19 @@
 // Menu hamburguesa
 // ========================================================================
 
-@import './variables';
+@import './mapaVariables';
 
 
 .navbar {
 
     .container{
 
-        z-index: 9;
-        position: relative;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
+        @include container;
 
         .navbar-toggler {
 
             border: none;
-            color: white;
+            color: map-get($colores,"fondoblanco");
 
             &-icon{
 
@@ -60,7 +55,7 @@
 
                             font-size: 1.3em;
                             font-family: "roboto";
-                            color: #3c3c3c;
+                            color: map-get($colores,"grisoscuro");
                             width: 100%;
                             height: 100%;
                             display: block;
@@ -71,7 +66,7 @@
 
                         .dropdown-menu {
 
-                            background-color: #FFF;
+                            background-color: map-get($colores,"fondoblanco");
                             box-shadow: $sombra;
                             padding: 1.6em 2em;
                             margin-top: -1em;
@@ -79,14 +74,14 @@
 
                             & a:hover{
 
-                                color: $rojoclaro;
+                                color: map-get($colores,"rojoclaro");
                                 background-color: transparent;
 
                             }
 
                             & a{
 
-                                color: #3c3c3c;
+                                color: map-get($colores,"grisoscuro");
                                 padding: 0.5em 0;
                                 font-size: 1em;
                                 text-decoration: none;
@@ -109,7 +104,7 @@
 
                         font-size: .9em;
                         font-family: "roboto";
-                        color: #000;
+                        color: map-get($colores,"negro");
                         border: 0;
                         padding: 7px 10px;
                         width: 100%;
@@ -157,7 +152,7 @@
 
                             .social__boton {
 
-                                color: #3c3c3c;
+                                color: map-get($colores,"grisoscuro");
                                 text-decoration: none;
                                 transition: all 0.2s ease-in-out;
 

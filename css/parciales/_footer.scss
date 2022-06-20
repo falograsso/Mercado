@@ -2,29 +2,24 @@
 // FOOTER
 // ========================================================================
 
+@import './mapaVariables';
+
 footer {
-    background-color: #262626;
+    background-color: map-get($colores,"grisoscuro2");
     padding: 50px 0px 70px;
-    color: #FFF;
+    color: map-get($colores,"fondoblanco");
 
     .container {
 
-        z-index: 9;
-        position: relative;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
+        @include container;
 
         .row{
 
-            margin-right: -25px;
-            margin-left: -25px;
+            @include row;
 
             .row{
                     
-                margin-right: -25px;
-                margin-left: -25px;
+                @include row;
 
                 .logo__boton{
 
@@ -108,7 +103,7 @@ footer {
 
                             footer .social__boton {
 
-                                color: #FFF;
+                                color: map-get($colores,"fondoblanco");
 
                                 .social__footer img {
                                     
@@ -131,7 +126,7 @@ footer {
 
                 footer a {
 
-                    color: #FFF;
+                    color: map-get($colores,"fondoblanco");
                     text-decoration: none;
                 }
 

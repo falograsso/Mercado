@@ -1,16 +1,14 @@
 // ========================================================================
 // NOTICIAS
 // ========================================================================
+
+@import './mapaVariables';
+
 .noticias{
 
     .container .contenido__noticias {
 
-        z-index: 9;
-        position: relative;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
+        @include container;
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 50px;
@@ -26,11 +24,11 @@
 
                 .noticias__articulo {
 
-                    background-color: #fff;
+                    background-color: map-get($colores,"fondoblanco");
                     transition: all 0.3s ease;
                     margin: 2rem 0;
                     cursor: pointer;
-                    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                    box-shadow: $sombra;
                     display: flex;
                     flex-direction: row;
                     height: 370px;
@@ -72,13 +70,13 @@
                     margin: 2em 0;
                     padding: 1em 0 0 0;
                     text-align: left;
-                    border-top: 1px solid #ed174f;
+                    border-top: $borderojo;
 
                     .activas {
 
-                        color: #FFF;
-                        background: #ed174f;
-                        border: 1px solid #ed174f;
+                        color: map-get($colores,"fondoblanco");
+                        background: map-get($colores,"rojoclaro");
+                        border: $borderojo;
                     }
 
                     .paginas a {
@@ -86,9 +84,9 @@
                         display: inline-block;
                         width: 30px;
                         height: 30px;
-                        color: #3c3c3c;
+                        color: map-get($colores,"grisoscuro");
                         background: inherit;
-                        border: 1px solid #ed174f;
+                        border: $borderojo;
                         margin: 0 5px 0 0;
                         padding: 0 5px;
                         text-decoration: none;
@@ -108,9 +106,9 @@
 
                 .aside__1, .aside__2 {
 
-                    background: #FFF;
+                    background: map-get($colores,"fondoblanco");
                     margin-bottom: 30px;
-                    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                    box-shadow: $sombra;
 
                     .aside__img {
 
@@ -124,10 +122,10 @@
                             .aside__quote {
 
                                 font-size: 1.6em;
-                                font-family: 'roboto';
+                                font-family: "roboto";
                                 text-align: center;
                                 line-height: 1.2;
-                                color: #3c3c3c;
+                                color: map-get($colores,"grisoscuro");
                                 display: block;
                                 margin-block-start: 1em;
                                 margin-block-end: 1em;
@@ -149,13 +147,13 @@
 
             .aside__1, .aside__2 {
 
-                background: #FFF;
+                background: map-get($colores,"fondoblanco");
                 margin-bottom: 30px;
-                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                box-shadow: $sombra;
 
                 aside h3 {
 
-                    box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 10%);
+                    box-shadow: $sombraclara;
                     margin: 0;
                     padding: 0.8em 1em;
                     font-size: 1.3em;
@@ -177,7 +175,7 @@
                                 font-size: 1.5em;
                                 text-decoration: none;
                                 font-family: "roboto" "bold";
-                                color: #3c3c3c;
+                                color: map-get($colores,"grisoscuro");
                                 transition: all 0.2s ease-in-out;
                             }
                         }

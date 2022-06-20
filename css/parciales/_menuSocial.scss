@@ -2,14 +2,11 @@
 // MENU - SOCIAL
 // ========================================================================
 
+@import './mapaVariables';
+
 .container{
 
-    z-index: 9;
-    position: relative;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-right: auto;
-    margin-left: auto;
+    @include container;
 
     .menu__primario{
         position: absolute;
@@ -49,7 +46,7 @@
                         text-transform: capitalize;
                         font-size: 1.1em;
                         font-family: "roboto";
-                        color: #3c3c3c;
+                        color: map-get($colores,"grisoscuro");
                         padding: 0 18px 32px;
                         margin: 0;
                         transition: all .2s ease-in-out;
@@ -60,7 +57,7 @@
 
                     a:hover {
 
-                        color: $rojoclaro;
+                        color: map-get($colores,"rojoclaro");
                         text-decoration: dotted;
 
                     }
@@ -108,7 +105,7 @@
                 }
 
                 a{
-                    color: #3c3c3c;
+                    color: map-get($colores,"grisoscuro");
                     text-decoration: none;
                     transition: all 0.2s ease-in-out;
                 }

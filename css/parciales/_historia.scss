@@ -2,16 +2,13 @@
 // HISTORIA
 // ========================================================================
 
+@import './mapaVariables';
+
 section{
 
     .container .text-box{
 
-        z-index: 9;
-        position: relative;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
+        @include container;
         margin-bottom: -50px;
         padding-top: 0;
         padding-bottom: 0;
@@ -22,11 +19,11 @@ section{
             gap: 1rem;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             grid-template-rows: auto;
-            background: #FFF;
+            background: map-get($colores,"fondoblanco");
             padding: 3em;
             clear: both;
-            color: #3c3c3c;
-            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            color: map-get($colores,"grisoscuro");
+            box-shadow: $sombra;
 
             .historia__texto{
 
@@ -34,7 +31,7 @@ section{
 
                     font-size: 24px;
                     text-align: left;
-                    color: #ed174f;
+                    color: map-get($colores,"rojoclaro");
                     font-family: "roboto";
                     margin: 1em 0 0.5em 0;
                     line-height: 1.2em;
@@ -49,6 +46,7 @@ section{
             .imagen__vertical {
 
                 grid-row: span 1;
+                
                 .historia__bloque > div > img {
 
                     width: 100%;

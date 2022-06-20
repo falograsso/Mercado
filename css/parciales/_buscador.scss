@@ -2,7 +2,7 @@
 // BUSCADOR
 // ========================================================================
 
-@import './variables';
+@import './mapaVariables';
 
 .buscador{
 
@@ -14,12 +14,7 @@
 
     .container{
 
-        z-index: 9;
-        position: relative;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
+        @include container;
 
         .buscador form{
 
@@ -34,7 +29,7 @@
 
                 font-size: .9em;
                 font-family: "roboto";
-                color: #000;
+                color: map-get($colores,"negro");
                 border: 0;
                 padding: 7px 10px;
                 width: 100%;

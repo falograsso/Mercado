@@ -2,12 +2,12 @@
 // TITULOS
 // ========================================================================
 
-@import './variables';
+@import './mapaVariables';
 
 h1{
     font-size: 53px;
     text-align: center;
-    color: $rojoclaro;
+    color: map-get($colores,"rojoclaro");
     font-family: "Roboto";
     margin: 1.5em 0 1em 0;
     line-height: 1.2em;
@@ -16,7 +16,7 @@ h1{
 h2{
     font-size: 50px;
     text-align: center;
-    color: $rojoclaro;
+    color: map-get($colores,"rojoclaro");
     font-family: "Roboto";
     margin: 1em 0 0.5em 0;
     line-height: 1.2em;
@@ -25,7 +25,7 @@ h2{
 h3, .titulo__historia{
     font-size: 24px;
     text-align: left;
-    color: $rojoclaro;
+    color: map-get($colores,"rojoclaro");
     font-family: "roboto";
     margin: 1em 0 0.5em 0;
     line-height: 1.2em;

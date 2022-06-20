@@ -2,29 +2,26 @@
 // CONTACTO
 // ========================================================================
 
+@import './mapaVariables';
+
 .container {
 
-    z-index: 9;
-    position: relative;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-right: auto;
-    margin-left: auto;
+    @include container;
 
     .contacto__bloque {
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-template-rows: auto;
-        background: #FFF;
+        background: map-get($colores,"fondoblanco");
         clear: both;
-        color: #3c3c3c;
-        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        color: map-get($colores,"grisoscuro"); 
+        box-shadow: $sombra;
 
         .contacto__div {
 
             clear: both;
-            color: #3c3c3c;
+            color: map-get($colores,"grisoscuro");
             padding: 3em;
 
             p {
@@ -39,19 +36,19 @@
                     border-radius: 2px;
                     font-size: 16px;
                     font-family: "roboto";
-                    color: #3c3c3c;
+                    color: map-get($colores,"grisoscuro");
                     border: 0;
                     padding: 10px 20px;
                     margin: 0 0 20px;
                     width: 100%;
-                    background: #f1efef;
+                    background: map-get($colores,"grisclaro");
                 }
 
                 .term__cond{
 
                     a {
                         
-                        color: #3c3c3c;
+                        color: map-get($colores,"grisoscuro");
                         text-decoration: none;
                         transition: all 0.2s ease-in-out;
                     }
@@ -59,8 +56,8 @@
 
                 .userEnviar, .userReset {
 
-                    background: #ed174f;
-                    color: #FFF;
+                    background: map-get($colores,"rojoclaro");
+                    color: map-get($colores,"fondoblanco");
                     border: 0;
                     padding: 10px 20px;
                     margin: 0 0 20px;
@@ -93,17 +90,17 @@
 
             .bloque2 {
 
-                background: #ed174f;
+                background: map-get($colores,"rojoclaro");
                 padding: 3em;
                 clear: both;
-                color: #3c3c3c;
+                color: map-get($colores,"grisoscuro");
                 display: flex;
                 flex-direction: column;
                 align-content: center;
 
                 .bloque2 h3 {
 
-                    color: #FFF;
+                    color: map-get($colores,"fondoblanco");
                 }
 
                 address {
@@ -116,12 +113,12 @@
 
                         .bloque2 ul li {
 
-                            color: #FFF;
+                            color: map-get($colores,"fondoblanco");
                             list-style: none;
 
                             .bloque2 strong {
 
-                                color: #FFF;
+                                color: map-get($colores,"fondoblanco");
                             }
 
                             strong {
@@ -134,12 +131,12 @@
 
                         .bloque2 ul li {
 
-                            color: #FFF;
+                            color: map-get($colores,"fondoblanco");
                             list-style: none;
 
                             .bloque2 strong {
 
-                                color: #FFF;
+                                color: map-get($colores,"fondoblanco");
                             }
 
                             strong {

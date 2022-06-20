@@ -1,0 +1,21 @@
+// ========================================================================
+// MIXINS
+// ========================================================================
+
+
+@mixin container{
+
+    z-index: 9;
+    position: relative;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin row{
+
+    margin-right: -25px;
+    margin-left: -25px;
+
+}
