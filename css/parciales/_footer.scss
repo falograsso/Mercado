@@ -36,17 +36,17 @@ footer {
 
                 }
 
-                address {
+                .direccion {
 
                     margin-bottom: 1rem;
                     font-style: normal;
                     line-height: inherit;
 
-                    footer ul {
+                    .direccion__lista {
 
                         margin-bottom: 50px;
 
-                        footer ul li {
+                        .direccion__item {
                             margin: 0;
                             font-size: .85em;
                             list-style: none;
@@ -56,15 +56,28 @@ footer {
                             }
                         }
                     }
+
+                    .informacion{
+
+                        margin-bottom: 50px; 
+
+                        .informacion__item{
+
+                            margin: 0;
+                            font-size: .85em;
+                            list-style: none;
+
+                        }
+                    }
                 }
 
                 .horarios{
 
-                    footer ul {
+                    ul {
 
                         margin-bottom: 50px;
 
-                        footer ul li {
+                        li {
 
                             margin: 0;
                             font-size: .85em;
@@ -83,7 +96,7 @@ footer {
 
                     padding-top: 10px;
 
-                    footer ol {
+                    ol {
 
                         margin-bottom: 50px;
 
@@ -101,11 +114,11 @@ footer {
                             width: 34px;
                             height: 34px;
 
-                            footer .social__boton {
+                            .social__boton {
 
                                 color: map-get($colores,"fondoblanco");
 
-                                .social__footer img {
+                                img {
                                     
                                     width: 24px;
                                     height: 24px;
@@ -116,6 +129,9 @@ footer {
                         }
                     }
                 }
+                .twitter {
+                    padding-top: 20px;
+                }
 
             }
 
@@ -124,10 +140,16 @@ footer {
                 text-align: center;
                 padding-top: 20px;
 
-                footer a {
+                .comienzo, .mail {
 
                     color: map-get($colores,"fondoblanco");
                     text-decoration: none;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                a:hover {
+
+                    color: #ed174f;
                 }
 
                 p {

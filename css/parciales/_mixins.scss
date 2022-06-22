@@ -11,6 +11,19 @@
     padding-left: 25px;
     margin-right: auto;
     margin-left: auto;
+
+    @media screen and (min-width: 768px){
+        width: 718px;
+    }
+    @media screen and (min-width: 992px){
+        width: 942px;
+    }
+    @media screen and (min-width: 1340px){
+        width: 1290px;
+    }
+    @media only screen and (max-width: 768px){
+        width: auto;
+    }
 }
 
 @mixin row{
