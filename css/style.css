@@ -738,6 +738,10 @@ blockquote {
     margin-top: 34px;
 }
 
+.agenda__aside{
+    margin-top: 34px; 
+}
+
 .aside__1, .aside__2{
     background: #FFF;
     margin-bottom: 30px;

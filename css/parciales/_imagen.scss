@@ -6,7 +6,9 @@
 
 .imagen{
 
-    .carouselExampleControls{
+    .carousel{
+
+        position: relative;
 
         .carousel-inner{
 
@@ -69,6 +71,23 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-template-rows: 1fr 1fr;
+
+                    @media screen and (min-width: 768px){
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                    }
+
+                    @media screen and (min-width: 992px){
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    @media screen and (min-width: 1340px){
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                    }
                     
                     .menu {
 

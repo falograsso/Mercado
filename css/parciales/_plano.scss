@@ -14,20 +14,382 @@
         padding-left: 8rem;
         margin-right: auto;
         margin-left: auto;
+        margin-top: 40px;
+        margin-bottom: 100px;
 
-        a {
+        @media screen and (min-width: 768px){
+            width: 718px;
+        }
 
-            color: map-get($colores,"grisoscuro");
-            text-decoration: none;
-            transition: all 0.2s ease-in-out;
+        @media screen and (min-width: 992px){
+            width: 942px;
+        }
 
-            .planos__img {
+        @media screen and (min-width: 1340px){
+            width: 1290px;
+        }
+            
+        @media only screen and (max-width: 992px){
+            display: none;
+        }
+
+        
+        .planos__img {
                 
+            width: 100%;
+            height: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 0px;
+
+            
+            .st0{
+                transition: all .4s ease-in-out;
+                cursor: pointer;
+            }
+            
+            .frutas__Verduras:hover, .frutas__Verduras:active{
+
+                fill: #65ba69;
+            }
+
+            .Carnicerías:hover, .Carnicerías:active{
+                
+                fill: #e43834;
+            }
+
+            .Pescados__Mariscos:hover, .Pescados__Mariscos:active{
+                
+                fill: #1d87e4;
+            }
+
+            .Frutos__secos:hover, .Frutos__secos:active{
+                
+                fill: #ffb64c;
+            }
+
+            .Aves__Huevos:hover, .Aves__Huevos:active{
+                
+                fill: #fff075;
+            }
+
+            .Aceitunas__Conservas:hover, .Aceitunas__Conservas:active{
+                
+                fill: #eb3f79;
+            }
+
+            .Quesería:hover, .Quesería:active{
+                
+                fill: #ff9d7f;
+            }
+
+            .Legumbres:hover, .Legumbres:active{
+                
+                fill: #8c6d62;
+            }
+
+            .Jamon__Embutidos:hover, .Jamon__Embutidos:active{
+                
+                fill: #49138b;
+            }
+            
+            .Baños:hover, .Baños:active{
+                
+                fill: #3c3c3c;
+            }
+
+            .Mercado:hover, .Mercado:active{
+                
+                fill: #ed174f;
+            }
+
+            .Elevadores:hover, .Elevadores:active{
+                
+                fill: #7a7a7a;
+            }
+
+            .Bares:hover, .Bares:active{
+                
+                fill: #ac1356;
+            }
+
+        }
+
+        .menu__puestos{
+
+            margin: 2em 0em; 
+
+            .lista__puesto{
+
+                padding-left: 0;
+                margin-left: -5px;
+                list-style: none;
+                text-align: center;
+                margin: 1em 0;
+                padding: 0;
                 width: 100%;
-                height: 100%;
-                margin: auto;
-                padding: 40px;
+                display: inline-block;
+
+
+                li{
+
+                    font-family: "Roboto"; 
+                    font-weight: 200;
+                    margin: 0 0 0.5em 0;
+                    padding: 0 0 0 25px;
+                    position: relative;
+                    margin-right: 25px;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    
+
+                    a{
+                        color: #3c3c3c;
+                        background-color: transparent;
+                        display: inline-block;
+                        text-decoration: none;
+                        transition: all 0.2s ease-in-out;
+
+                        
+                        span{
+                            
+                            display: inline-flex;
+                            align-items: center;
+                            
+                            .color- span:before{
+                                
+                                background: #fff075;
+                            }
+                        }
+                    }
+                    
+                    a[class='color-frutas__Verduras'] span:before{
+                        
+                        @include before;
+                        background: #65ba69;
+                    }
+
+                    a[class='color-Carnicerías'] span:before{
+                        
+                        @include before;
+                        background: #e43834;
+                    }
+
+                    a[class='color-Pescados__Mariscos'] span:before{
+                        
+                        @include before;
+                        background: #1d87e4;
+                    }
+
+                    a[class='color-Frutos__secos'] span:before{
+                        
+                        @include before;
+                        background: #ffb64c;
+                    }
+
+                    a[class='color-Aves__Huevos'] span:before{
+                        
+                        @include before;
+                        background: #fff075;
+                    }
+
+                    a[class='color-Aceitunas__Conservas'] span:before{
+                        
+                        @include before;
+                        background: #eb3f79;
+                    }
+
+                    a[class='color-Quesería'] span:before{
+                        
+                        @include before;
+                        background: #ff9d7f;
+                    }
+
+                    a[class='color-Legumbres'] span:before{
+                        
+                        @include before;
+                        background: #8c6d62;
+                    }
+
+                    a[class='color-Jamon__Embutidos'] span:before{
+                        
+                        @include before;
+                        background: #49138b;
+                    }
+
+                    a[class='color-Mercado'] span:before{
+                        
+                        @include before;
+                        background: #ed174f;
+                    }
+
+                    a[class='color-Baños'] span:before{
+                        
+                        @include before;
+                        background: #3c3c3c;
+                    }
+
+                    a[class='color-Elevadores'] span:before{
+                        
+                        @include before;
+                        background: #7a7a7a;
+                    }
+
+                    a[class='color-Bares'] span:before{
+                        
+                        @include before;
+                        background: #ac1356;
+                    }
+
+                    a:after {
+
+                        @include after;
+                    }
+
+                    .color-frutas__Verduras:after {
+                        background: #65ba69;
+                    }
+
+                    .color-frutas__Verduras:hover {
+                        color: #65ba69;
+                    }
+
+                    .color-Carnicerías:after {
+                        
+                        background: #e43834;
+                    }
+
+                    .color-Carnicerías:hover {
+                        
+                        color: #e43834;
+                    }
+
+                    .color-Pescados__Mariscos:after{
+                        
+                        background: #1d87e4;
+                    }
+
+                    .color-Pescados__Mariscos:hover{
+                        
+                        color: #1d87e4;
+                    }
+
+                    .color-Frutos__secos:after{
+
+                        background: #ffb64c;
+                    }
+
+                    .color-Frutos__secos:hover{
+                        
+                        color: #ffb64c;
+                    }
+
+                    .color-Aves__Huevos:after{
+                        
+                        background: #fff075;
+                    }
+
+                    .color-Aves__Huevos:hover{
+                        
+                        color: #fff075;
+                    }
+
+                    .color-Aceitunas__Conservas:after{
+
+                        background: #eb3f79;
+                    }
+
+                    .color-Aceitunas__Conservas:hover{
+                        
+                        color: #eb3f79;
+                    }
+
+                    .color-Quesería:after{
+                        
+                        background: #ff9d7f;
+                    }
+
+                    .color-Quesería:hover{
+                        
+                        color: #ff9d7f;
+                    }
+
+                    .color-Legumbres:after{
+                        
+                        background: #8c6d62;
+                    }
+
+                    .color-Legumbres:hover{
+                        
+                        color: #8c6d62;
+                    }
+
+                    .color-Jamon__Embutidos:after{
+                        
+                        background: #49138b;
+                    }
+
+                    .color-Jamon__Embutidos:hover{
+                        
+                        color: #49138b;
+                    }
+
+                    .color-Mercado:before{
+                        
+                        background: #ed174f;
+                    }
+
+                    .color-Mercado:hover{
+                        
+                        color: #ed174f;
+                    }
+
+                    .color-Baños:after{
+                        
+                        background: #3c3c3c;
+                    }
+
+                    .color-Baños:hover{
+                        
+                        color: #3c3c3c;
+                    }
+
+                    .color-Elevadores:after{
+                        
+                        background: #7a7a7a;
+                    }
+
+                    .color-Elevadores:hover{
+                        
+                        color: #7a7a7a;
+                    }
+
+                    .color-Elevadores:after{
+
+                        background:#7a7a7a
+                    }
+
+                    .color-Elevadores:hover{
+                        
+                        color:#7a7a7a
+                    }
+
+                    .color-Bares:after{
+                        
+                        background: #ac1356;
+                    }
+
+                    .color-Bares:hover{
+                        
+                        color: #ac1356;
+                    }
+                }
             }
         }
+
+
+        
     }
 }

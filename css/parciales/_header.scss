@@ -14,4 +14,15 @@ header{
     z-index: 998;
     box-shadow: $sombra;
 
+    @media (max-width: 992px){
+
+        background: #FFF;
+        min-height: 80px;
+        position: absolute;
+        z-index: 999999;
+        width: 100%;
+        margin: 0;
+        position: fixed;
+    }
+
 } 

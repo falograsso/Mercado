@@ -4,6 +4,12 @@
 
 .logo{
 
+    @media only screen and (max-width: 992px){
+
+        left: calc(50% - 40px);
+        position: absolute;
+    }
+
     height: 100%;
     margin: 0 auto;
 
@@ -21,6 +27,11 @@
             .logo__boton{
     
                 .logo__img{
+
+                    @media only screen and (max-width: 992px){
+                        
+                        width: 5rem;
+                    }
     
                     width: 8rem;
     

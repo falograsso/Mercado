@@ -7,9 +7,10 @@
 .inicio__menu {
 
     background-image: url(../assets/meridiano.jpg);
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    background-size: 100% 90%;
+    margin-top: 40px;
+    margin-bottom: 200px;
 
     .container {
 
@@ -31,6 +32,11 @@
                 width: 66.66666667%;
                 margin-left: 16.66666%;
 
+                @media only screen and (max-width: 992px) {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
                 .div__video {
 
                     position: relative;
@@ -40,7 +46,7 @@
                     overflow: hidden;
                     padding-bottom: 56.25%;
 
-                    .inicio__menu iframe {
+                    iframe {
 
                         position: absolute;
                         top: 0;
@@ -53,6 +59,10 @@
                 }
 
                 blockquote {
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 2em;
+                    }
 
                     line-height: 1.2;
                     color: map-get($colores,"rojoclaro");
@@ -68,7 +78,7 @@
                     margin-inline-start: 40px;
                     margin-inline-end: 40px;
                 }
-                .inicio__menu p {
+                p {
 
                     text-align: center;
                     margin: 0 0 1em 0;

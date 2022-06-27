@@ -21,8 +21,77 @@ footer {
                     
                 @include row;
 
-                .logo__boton{
+                .col-sm-4{
 
+                    @media (min-width: 768px){
+                        width: 33.33333333%;
+                    }
+                }
+                
+                .col-sm-8 {
+                    @media (min-width: 768px){
+                        width: 66.66666667%;
+                    }
+                }
+
+                .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11 {
+
+                    @media (min-width: 768px){
+                        float: left;
+                    }
+                }
+
+                .col-sm-12 {
+
+                    @media (min-width: 768px){
+                        float: left;
+                        width: 100%;
+                    }
+                }
+
+                .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+
+                    @media (min-width: 992px){
+                        float: left;
+                    }
+                }
+
+                .col-md-1 {
+
+                    @media (min-width: 992px){
+                        width: 8.33333333%;
+                    }
+                }
+
+                .col-md-3 {
+
+                    @media (min-width: 992px){
+                        width: 25%;
+                    }
+                }
+
+                .col-md-4 {
+
+                    @media (min-width: 992px){
+                        width: 33.33333333%;
+                    }
+                }
+
+                .col-md-4 {
+
+                    @media (min-width: 992px){
+                        width: 33.33333333%;
+                    }
+                }
+
+                .col-md-offset-0 {
+                    @media (min-width: 992px){
+                        margin-left: 0;
+                    }
+                }
+
+                .logo__boton{
+    
                     .img-responsive {
 
                         max-width: 100%;
@@ -125,10 +194,16 @@ footer {
                                     background-color: transparent;
                                     filter: invert(99%) sepia(0%) saturate(3961%) hue-rotate(54deg) brightness(121%) contrast(100%);
                                 }
+
+                                img:hover {
+
+                                    filter: invert(28%) sepia(98%) saturate(4541%) hue-rotate(333deg) brightness(93%) contrast(100%);
+                                }
                             }
                         }
                     }
                 }
+                
                 .twitter {
                     padding-top: 20px;
                 }
