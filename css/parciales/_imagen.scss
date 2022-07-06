@@ -7,26 +7,118 @@
 .imagen{
 
     .carousel{
-
+        
         position: relative;
-
+        
         .carousel-inner{
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
 
             .carousel-item{
 
-                .imagen__imagen {
+                @media only screen and (max-width: 768px){
+                    
+                    height: 80vh;
+                }
 
+                width: 100%;
+                height: calc(100vh - 100px);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+
+                a{
+
+                    position: absolute;
                     width: 100%;
-                    height: calc(100vh - 100px);
-                    object-fit: cover;
-                    object-position: center;
+                    height: 100%;
+
+                    .imagen__imagen {
+                        
+                    height: auto;
+                    width: 100%;
+                        
+                    }
+                }
+
+                .container{
+
+                    @include container;
+                    top: 120px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .inner-claim-container{
+
+                        padding: 0;
+                        text-align: right;
+                        width: 60%;
+                        height: auto;
+
+                        em{
+    
+                            display: block;
+                            font-size: 4.2em;
+                            color: #FFF;
+                            text-align: right;
+                            text-transform: initial;
+                            font-family: "roboto";
+                            font-weight: 700;
+                            font-style: italic;
+                            margin: 0;
+                            font-style: normal;
+                            line-height: 1;
+                        }
+                    }
                     
                 }
+
+                .izq{
+
+                    @include container;
+                    
+                    top: 120px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .inner-claim-container2{
+
+                        padding: 0;
+                        text-align: left;
+                        width: 60%;
+                        height: auto;
+    
+                        .em2{
+    
+                            display: block;
+                            font-size: 4.2em;
+                            color: #FFF;
+                            text-align: left;
+                            text-transform: initial;
+                            font-family: "roboto";
+                            font-weight: 700;
+                            font-style: italic;
+                            margin: 0;
+                            font-style: normal;
+                            line-height: 1;
+                        }
+                    }
+                }
+
             }
 
         }
 
         .carousel-control-prev{
+
+            top: 240px;
 
             .carousel-control-prev-icon {
 
@@ -38,6 +130,8 @@
         }
 
         .carousel-control-next{
+
+            top: 240px;
 
             .carousel-control-next-icon {
 
@@ -62,7 +156,7 @@
 
                 .menu__grid {
 
-                    margin-top: -150px;
+                    margin-top: -10vh;
                     width: 100%;
                     height: 550px;
                     padding-right: 25px;
@@ -76,11 +170,16 @@
                         display: flex;
                         flex-direction: column;
                         height: 100%;
+                        float: left;
+                        width: 100%;
                     }
 
                     @media screen and (min-width: 992px){
                         display: flex;
                         flex-direction: column;
+                        margin-left: 8.33333333%;
+                        width: 83.33333333%;
+                        float: left;
                     }
 
                     @media screen and (min-width: 1340px){
@@ -91,6 +190,9 @@
                     
                     .menu {
 
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
                         width: 100%;
                         height: 100%;
 
@@ -99,11 +201,107 @@
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
+                            transition: transform 0.2s ease-out;
+                        
+                        }
+
+                        .menu__texto, .menu__texto2{
+
+                            @media only screen and (max-width: 992px){
+                                display: none;
+                            }
+
+                            @include menucontexto;
+
+                            h3{
+                                    
+                                line-height: 1.25em;
+                                margin-top: 0.85em;
+                                margin-bottom: 0.5em;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                            }
+
+                            p{
+                                font-size: 1em;
+                                line-height: 1.4;
+                                margin: 0 0 1.5em;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                font-family: "roboto";
+                                font-weight: 500;
+                            }
+
+                            a{
+                                color: #3c3c3c;
+                                text-decoration: none;
+                                transition: all 0.2s ease-in-out;
+
+                                img{
+                                    width: 24px;
+                                    height: 24px;
+                                    background-color: transparent;
+                                    filter: invert(28%) sepia(98%) saturate(4541%) hue-rotate(333deg) brightness(93%) contrast(100%);
+                                }
+
+                                .menu__boton{
+                                    width: 24px;
+                                    height: 24px;
+                                    background-color: transparent;
+                                    filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(256deg) brightness(99%) contrast(94%);
+                                }
+                            }
                             
                         }
+
+                        .menu__texto2{
+
+                            @media only screen and (max-width: 992px){
+                                display: none;
+                            }
+
+                            @include menucontexto;
+
+                            color: map-get($colores,"fondoblanco");
+
+                            background: map-get($colores,"rojoclaro");
+
+                            h3{
+                                    
+                                line-height: 1.25em;
+                                margin-top: 0.85em;
+                                margin-bottom: 0.5em;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+
+                                color: map-get($colores,"fondoblanco");
+                            }
+                        }
+                   
+                        .menu__texto, .menu__texto2 {
+                            opacity: 0;
+                            transition: opacity 0.2s ease-out;  
+                        }
+            
+                        .menu__texto:hover {
+                            opacity: 1;
+                            z-index: 1;
+                        }
+
+                        .menu__texto2:hover {
+                            opacity: 1;
+                            z-index: 1;
+                        }
                     }
+                    
                 }
+                
             }
+
         }
+
     }
 }

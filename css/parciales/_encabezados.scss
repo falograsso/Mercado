@@ -5,31 +5,31 @@
 @import './mapaVariables';
 
 h1{
-    font-size: 53px;
+    font-size: 3.3rem;
     text-align: center;
     color: map-get($colores,"rojoclaro");
     font-family: "Roboto";
     margin: 1.5em 0 1em 0;
     line-height: 1.2em;
-    font-weight: 700
+    font-weight: 700;
 }
 
 h2{
-    font-size: 50px;
+    font-size: 3.1rem;
     text-align: center;
     color: map-get($colores,"rojoclaro");
     font-family: "Roboto";
     margin: 1em 0 0.5em 0;
     line-height: 1.2em;
-    font-weight: 700
+    font-weight: 700;
 }
 
 h3, .titulo__historia{
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: left;
     color: map-get($colores,"rojoclaro");
     font-family: "roboto";
     margin: 1em 0 0.5em 0;
     line-height: 1.2em;
-    font-weight: 700
+    font-weight: 700;
 }
