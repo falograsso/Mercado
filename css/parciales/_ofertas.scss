@@ -6,7 +6,6 @@
 
 $h1color: #6e768d;
 $h3color: #b4bdc6;
-$bgctables: #ffffff;
 $bgfontcolor: #717787;
 
 .pricingTable{
@@ -34,7 +33,7 @@ $bgfontcolor: #717787;
     &_table{
       vertical-align: middle;
       width: $widthoftable;
-      background-color: $bgctables;
+      background-color: map-get($colores,"fondoblanco");
       display: inline-block;
       padding: 0px 30px 40px;
       text-align: center;
