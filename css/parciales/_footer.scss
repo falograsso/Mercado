@@ -3,6 +3,7 @@
 // ========================================================================
 
 @import './mapaVariables';
+@import './MediaQueries';
 
 footer {
     background-color: map-get($colores,"grisoscuro2");
@@ -85,6 +86,7 @@ footer {
                 }
 
                 .col-md-offset-0 {
+                    
                     @media (min-width: 992px){
                         margin-left: 0;
                     }
@@ -97,12 +99,6 @@ footer {
                         max-width: 100%;
                         
                     }
-                }
-
-                strong {
-
-                    font-family: "roboto";
-
                 }
 
                 .direccion {
@@ -164,8 +160,14 @@ footer {
                 .social__footer {
 
                     padding-top: 10px;
+               
+                    strong {
 
-                    ol {
+                        font-family: "roboto";
+    
+                    }
+
+                    ol {    
 
                         margin-bottom: 50px;
 
@@ -205,9 +207,32 @@ footer {
                 }
                 
                 .twitter {
+
                     padding-top: 20px;
+                    height: 360px;
+
+                    @media (max-width: 992px){
+                        display: none;
+                    }
+
+                    .twitter-timeline2{
+
+                        @media (min-width: 1025px){
+                            margin-bottom: 10px;
+                            height: 300px;
+                        }
+
+                    }
+
                 }
 
+                .instagram{
+
+                    @media (max-width: 992px){
+                        display: none;
+                    }
+                }
+                
             }
 
             .contactenos{

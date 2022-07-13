@@ -24,4 +24,21 @@ $colores: (
     "h3color": #b4bdc6,
 );
 
+$fuentes: (
+    "desktop": 1rem,
+    "tablet": 1.2rem,
+    "movil": 1.5rem,
+    "movilS": 2rem,
+);
+
+@each $key, $value in $fuentes{
+    .fuente-#{$key}{
+        font-size: $value;
+    }
+}
+
+
+
+
+
 

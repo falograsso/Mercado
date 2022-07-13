@@ -4,6 +4,16 @@
 
 @import './mapaVariables';
 
+.inicio__menu__movil{
+
+    @media only screen and (min-width: 425px) {
+
+        background-image: none;
+        margin-bottom: 0px;
+    }
+
+}
+
 .inicio__menu {
 
     background-image: url(../assets/meridiano.jpg);
@@ -12,13 +22,35 @@
     margin-top: 40px;
     margin-bottom: 200px;
 
+    @media only screen and (max-width: 992px) {
+
+        margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 425px) {
+
+        background-image: none;
+        margin-bottom: 0px;
+    }
+
     .container {
 
         @include container;
 
+        @media screen and (min-width: 768px){
+            padding-right: 0px;
+            padding-left: 0px;
+            width: 800px;
+        }
+
         .row {
 
             @include row;
+
+            @media screen and (min-width: 768px){
+                margin-right: -130px;
+                margin-left: -130px;
+            }
 
             .div__bloque {
 
@@ -35,6 +67,9 @@
                 @media only screen and (max-width: 992px) {
                     margin-top: 0;
                     margin-bottom: 0;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 0px;
                 }
 
                 .div__video {

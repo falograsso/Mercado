@@ -1,0 +1,52 @@
+// ========================================================================
+// MAIN
+// ========================================================================
+
+@import './mapaVariables';
+
+
+.fuente-movilS{
+
+    @media only screen and (max-width: 320px) {
+        font-size: map-get($fuentes,"movilS");
+    }
+    
+}
+
+.fuente-movil{
+
+    @media only screen and (min-width: 425px) {
+        font-size: map-get($fuentes,"movil");
+    }
+    
+}
+
+.fuente-tablet{
+
+    @media screen and (min-width: 768px) {
+
+        font-size: map-get($fuentes,"tablet");
+
+    }
+    
+}
+
+.fuente-desktop{
+
+    @media screen and (min-width: 1024px) {
+
+        font-size: map-get($fuentes,"desktop");
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    

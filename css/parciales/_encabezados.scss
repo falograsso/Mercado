@@ -14,6 +14,14 @@ h1{
     font-weight: 700;
 }
 
+.planosh1{
+
+    @media only screen and (max-width: 992px){
+        display: none;
+
+    }
+}
+
 h2{
     font-size: 3.1rem;
     text-align: center;

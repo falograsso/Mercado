@@ -63,7 +63,12 @@
     background: map-get($colores,"fondoblanco");
     position : absolute;
     width: 26.5%;
-    height: 59%;
+    height: 62.3%;
+
+    @media screen and (max-width: 992px){
+        width: 78%;
+        height: 16.2%;
+    }
 }
 
 
