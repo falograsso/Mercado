@@ -7,38 +7,43 @@
 
 .fuente-movilS{
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (min-width: 321px) {
         font-size: map-get($fuentes,"movilS");
     }
     
 }
 
-.fuente-movil{
+// .fuente-movil{
 
-    @media only screen and (min-width: 425px) {
-        font-size: map-get($fuentes,"movil");
-    }
+//     @media only screen and (min-width: 426px) {
+//         font-size: map-get($fuentes,"movil");
+//     }
+
+//     @media only screen and (max-width: 425px) {
+//         font-size: map-get($fuentes,"movil");
+//     }
     
-}
+// }
 
-.fuente-tablet{
+// .fuente-tablet{
 
-    @media screen and (min-width: 768px) {
+//     @media screen and (min-width: 769px) {
 
-        font-size: map-get($fuentes,"tablet");
+//         font-size: map-get($fuentes,"tablet");
 
-    }
-    
-}
+//     }
+// }
 
 .fuente-desktop{
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
 
         font-size: map-get($fuentes,"desktop");
 
     }
 }
+
+
 
 
 

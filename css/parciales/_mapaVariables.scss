@@ -25,15 +25,46 @@ $colores: (
 );
 
 $fuentes: (
-    "desktop": 1rem,
-    "tablet": 1.2rem,
-    "movil": 1.5rem,
-    "movilS": 2rem,
+    "desktop": calc(0.4rem + 1.2vh),
+    "tablet": calc(0.5rem + 1vh),
+    "movil": calc(0.6rem + 1vh),
+    "movilS": calc(0.5rem + .8vh),
 );
 
 @each $key, $value in $fuentes{
     .fuente-#{$key}{
         font-size: $value;
+    }
+}
+
+$planos:(
+    "frutas__Verduras": #65ba69,
+    "Carnicerías": #e43834,
+    "Pescados__Mariscos": #1d87e4,
+    "Frutos__secos": #ffb64c,
+    "Aves__Huevos": #fff075,
+    "Aceitunas__Conservas": #eb3f79,
+    "Quesería": #ff9d7f,
+    "Legumbres": #8c6d62,
+    "Jamon__Embutidos": #49138b,
+    "Mercado": #ed174f,
+    "Baños": #3c3c3c,
+    "Elevadores": #7a7a7a,
+    "Bares": #ac1356,
+);
+
+
+@each $name, $value in $planos {
+
+    .color-#{$name}:hover {
+        color: $value;
+    }
+}
+
+@each $name, $value in $planos {
+
+    .color-#{$name}:after {
+        background: $value;
     }
 }
 

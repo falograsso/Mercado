@@ -17,7 +17,7 @@ header{
     @media (max-width: 992px){
 
         background: map-get($colores,"fondoblanco");
-        min-height: 80px;
+        min-height: calc(0.4rem + 9vh);
         position: absolute;
         z-index: 999999;
         width: 100%;
